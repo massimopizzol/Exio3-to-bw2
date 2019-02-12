@@ -2,7 +2,7 @@
 
 Import Exiobase v3 into brightway2
 
-This is an attempt to import exioase version 3 into Brightway2. It works, but it is slow (1h on my computer) and there are certainly better ways to do it.
+This is an attempt to import tables of the Multi-Regional Input-Output database Exiobase version 3 into the python-baseed Brightway2 LCA framework. It works, but it is slow (1h on my computer) and there are certainly better ways to do it.
 
 # Run the code
 With the official “exiobase_3.3.15_hsut_2011” **folder** ( downloaded [here](https://www.exiobase.eu/index.php/data-download/exiobase3hyb))in your working directory. 
