@@ -8,15 +8,15 @@ This is an attempt to import exioase version 3 into Brightway2. It works, but it
 With the official “exiobase_3.3.15_hsut_2011” **folder** ( downloaded [here](https://www.exiobase.eu/index.php/data-download/exiobase3hyb))in your working directory. 
 This is what the code does:
 
-- Import the HIO sheet from xlsb file
-- Create a dict with activities and exchanges
-- Write the dict as bw database
-- Import final prod sheet from xlsb file
-- Add the final prod to existing bw database
-- Import emissions from another xlsb file
-- Match emissions with biosphere3 codes (only 3 of them as a test)
-- Add the emissions to the existing bw database
-- Do calculations.
+1. Import the HIO sheet from xlsb file
+2. Create a dict with activities and exchanges
+3. Write the dict as bw database
+4. Import final prod sheet from xlsb file
+5. Add the final prod to existing bw database
+6. Import emissions from another xlsb file
+7. Match emissions with biosphere3 codes (only 3 of them as a test)
+8. Add the emissions to the existing bw database
+9. Do calculations.
  
 Important notes and limitations
 - Steps 1 and 3 take quite long time. Step 8 might take some time too when done for all emissions.
