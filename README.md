@@ -22,8 +22,7 @@ Important notes and limitations
 - Steps 1 and 3 take quite long time. Step 8 might take some time too when done for all emissions.
 - This code is exclusively for the supply and use table in hybrid units.
 - A mapping of exiobase emissions to biosphere3 exchange codes is needed to extend the import to all environmental exchanges
-- I haven’t imported the final demand either. 
-- These are activities so would need to be done just before step 3 I think (and will make step 3 even more time consuming).
+- I haven’t imported the final demand either. These are activities so would need to be done just before step 3 I think (and will make step 3 even more time consuming).
  
 Any feedback is truly appreciated.
 
