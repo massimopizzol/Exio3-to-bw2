@@ -26,9 +26,9 @@ This is what the code does:
 - A mapping of exiobase emissions to biosphere3 exchange codes is needed to extend the import to all environmental exchanges
 - I haven’t imported the final demand either. These are activities so would need to be done just before step 3 I think (and will make step 3 even more time consuming).
 
-- The xlsb files  can be imported more quickly (seconds insteads of minutes) if they are prior **manually** converted in .csv, e.g. like this 
+- One can convert manually the .xlsb files in .csv and then the import becomes much quicker (seconds insteads of minutes): 
 ```
-HIO = pd.read_csv(r"Exiobase_MR_HIOT_2011_v3_3_15_by_prod_tech.csv", header=None)
+HIO = pd.read_csv("Exiobase_MR_HIOT_2011_v3_3_15_by_prod_tech.csv", header=None)
 ```
-However, this is at your own risk. I don't guarantee that the manual conversion will mess up the original tables and that's why I have not implemented this option in first place.
+However, this is at your own risk. The manual conversion might mess up the original tables and that's why I have not implemented this option in first place. This code takes point of departure in the original exiobase files. 
 
