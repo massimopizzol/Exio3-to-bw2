@@ -25,7 +25,10 @@ This is what the code does:
 - This code is exclusively for the supply and use table in hybrid units.
 - A mapping of exiobase emissions to biosphere3 exchange codes is needed to extend the import to all environmental exchanges
 - I haven’t imported the final demand either. These are activities so would need to be done just before step 3 I think (and will make step 3 even more time consuming).
- 
-Any feedback is truly appreciated.
 
+- The xlsb files  can be imported more quickly (seconds insteads of minutes) if they are prior **manually** converted in .csv, e.g. like this 
+```
+HIO = pd.read_csv(r"Exiobase_MR_HIOT_2011_v3_3_15_by_prod_tech.csv", header=None)
+```
+However, this is at your own risk. I don't guarantee that the manual conversion will mess up the original tables and that's why I have not implemented this option in first place.
 
