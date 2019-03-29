@@ -15,7 +15,7 @@ This is what the code does:
 4. Import final prod sheet from xlsb file
 5. Add the final prod to existing bw database
 6. Import emissions from another xlsb file
-7. Match emissions with biosphere3 codes (only 3 of them as a test)
+7. Match emissions with biosphere3 codes (not all of them)
 8. Add the emissions to the existing bw database
 9. Do calculations.
  
@@ -23,8 +23,9 @@ This is what the code does:
 
 - Steps 1 and 3 take quite long time.
 - This code is exclusively for the supply and use table in hybrid units.
-- A preliminary mapping of exiobase emissions to biosphere3 exchange codes is provided, not all emissions are matched though.
-- It is not currently possible to import other thpes of environmental exchanges (need a similar mapping file)
+- Right now only three GHG emissions are included in the calculation.
+- (the v2 file uses a preliminary mapping of exiobase emissions to biosphere3 exchange codes is provided, not all emissions are matched though. This code is not fully tested. Works, but the results are unrealistic (too low LCIA scores) so there is some mistake in the numbers.)
+- It is not currently possible to import other types of environmental exchanges (need mapping files)
 - I haven’t imported the final demand either. These are activities so would need to be done just before step 3 I think (and will make step 3 even more time consuming).
 
 - One can convert manually the .xlsb files in .csv and then the import becomes much quicker (seconds insteads of minutes): 
